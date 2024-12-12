@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0; padding: 0;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color:#234674;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .left-container{
+            height: 99%;
+            width: 49%;
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/931/349/258/digital-art-portrait-display-cgi-space-universe-planet-stars-sun-rays-galaxy-milky-way-wallpaper-preview.jpg');
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .right-container{
+            height: 99%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .top{
+            height: 32%;
+            width: 100%;
+            background-image: url('https://img.freepik.com/premium-photo/universe-landscape-outer-space-background-illustration_529119-2518.jpg');
+            background-size: cover;
+            border-radius: 7px;
+        }
+
+        .middle{
+            height: 32%;
+            width: 100%;
+            display: flex;
+        }
+
+        .middle1{
+            height: 100%;
+            width: 50%;
+            background-image: url('https://assets.weforum.org/article/image/responsive_large_M6WwUWq0RPC7_MW5n6s81wgynwMAkV1RKeJfawkhDDo.jpg');
+            border-radius: 7px 0 0 7px;
+        }
+
+        .middle2{
+            height: 100%;
+            width: 50%;
+            background-image: url('https://t3.ftcdn.net/jpg/09/90/15/60/360_F_990156023_fzW5uxJJFcM5ds5cXGZfasxBpF01AyMM.jpg');
+            border-radius: 0 7px 7px 0;
+        }
+
+        .bottom{
+            height: 32%;
+            width: 100%;
+            background-image: url('https://wallpapers.com/images/hd/cosmic-serenity-jpg-7byzp0cycbvjji8g.jpg');
+            background-size: cover;
+            border-radius: 7px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container"></div>
+        <div class="right-container">
+            <div class="top"></div>
+            <div class="middle">
+                <div class="middle1"></div>
+                <div class="middle2"></div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

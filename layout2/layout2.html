@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout3</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0; 
+            padding: 5px;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color:antiquewhite;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .column-left{
+            height: 99%;
+            width: 49%;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .column-right{
+            height: 99%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .top{
+            height: 32%;
+            width: 100%;
+            padding: 3px;
+            background-color: blue;
+            border-radius: 7px;
+        }
+
+        .middle{
+            height: 32%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .middle1{
+            height: 100%;
+            width: 49%;
+            background-color: blueviolet;
+            border-radius: 7px;
+        }
+
+        .middle2{
+            height: 100%;
+            width: 49%;
+            background-color: rgb(58, 121, 204);
+            border-radius: 7px ;
+        }
+
+        .bottom{
+            height: 32%;
+            width: 100%;
+            background-color:black;         
+            border-radius: 7px;   
+        }
+
+        .entry{
+            color: aliceblue;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        button{
+            width: 90%;
+            position: relative;
+            left: 5%;
+            margin: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column-left"></div>
+        <div class="column-right">
+            <div class="top">
+                <h2>The Nature Show</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam adipisci commodi, iste officia quas consectetur dolor deleniti beatae distinctio consequatur tempore neque nostrum accusamus blanditiis sequi deserunt magni veniam, amet dicta facilis! Odio ipsam perspiciatis nulla! Amet, necessitatibus minus.</p>
+            </div>
+            <div class="middle">
+                <div class="middle1"></div>
+                <div class="middle2"></div>
+            </div>
+            <div class="bottom">
+                <h2 style="color: aliceblue; margin: 3px; padding: 3px;">Join Us!</h2>
+                <div class="entry">
+                    <div class="name">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="">
+                    </div>
+
+                </div>
+
+                <button>I want to be a part of it</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
